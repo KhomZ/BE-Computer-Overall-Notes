@@ -1,0 +1,128 @@
+Router Command Modes
+======================
+Terminal Emulation
+Data Rate => 9600 bps
+Data Bits => 8
+Parity Bit => No
+Stop Bit => 1
+9600, 8-N-1
+
+Router> => User Execution Mode
+Router> enable
+Router# => Privilege Mode
+Router# configure terminal
+Router(Config)# => Global Configuration Mode
+
+Router(Config)# exit
+Router# exit
+Router>
+
+1. Set Hostname of a Router
+===========================
+Router(Config)# hostname Router-NCIT
+Router-NCIT(Config)#
+
+2. Set Clock
+============
+Router# clock set 07:39:00 18 April 2021
+Router# show clock
+
+3. Check the Router IOS Version and  Uptime
+========================++================
+IOS => Internetwork Operating System
+Router# show version
+
+Configuration Register => 0x2102 (Normal Mode)
+Configuration Register => 0x2142 (Bypass Mode) => It will Bypass NVRAM
+
+
+4.Router Memory
+=============
+ROM => Diagonestic Module (Rommon Mode)
+Rommon 1> 
+
+RAM => Active Memory (running-config)
+NVRAM => Non Volatile RAM (To Store Configuration File Permanently) => startup-config
+Flash => IOS File (Internetwork Operating System)
+
+Router# show running-config
+Router# show startup-config
+Router# show flash:
+Router# dir flash:
+
+5.To Save Config from RAM to NVRAM
+================================
+Router# write
+Router# copy running-config startup-config
+
+6. To Verify the Interface of Router
+====================================
+Router# show ip interface brief
+
+7. IP Addressing
+=================
+Router(config)# interface Gigabitethernet 0/0
+Router(config-if)# ip address 192.168.1.254 255.255.255.0
+Router(config-if)# description Connection To/From NCIT-LAN
+Router(config-if)# no shutdown
+Router(config-if)#exit
+Router(config)#exit
+Router#
+
+8. DHCP Setting
+===============
+Router(config)# ip dhcp pool NCIT-DHCP
+Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.1.254
+Router(dhcp-config)# dns-server 192.168.1.1
+Router(dhcp-config)# exit
+Router(config)# ip dhcp excluded-address 192.168.1.1
+
+9. Router Remote Administration (Telnet)
+=========================================
+Router(config)# username admin privilege 15 secret cisco
+Router(config)# username user privilege 0 secret ncit
+Router(config)# line vty 0 15
+Router(config-line)# login local
+Router(config-line)# transport input telnet
+
+10. Router Console Security
+============================
+Router(config)# line console 0
+Router(config-line)# login local
+
+11. Enable Security for Normal User
+===================================
+Router(config)#enable secret n3pal
+
+12. Remote Administration through SSH
+======================================
+SSH => Secured Shell
+Disable Telnet => Telnet => Plain Text
+
+Router(config)# ip domain-name ncit.edu.np
+Router(config)# crypto key generate rsa
+Key size : 1024
+
+Router(config)# line vty 0 15
+Router(config-line)# transport input ssh
+Router(config-line)# login local
+
+13. Access Control List for Remote Access
+==========================================
+Router(config)# ip access-list standard REMOTE-SSH
+Router(config-std-nacl)# permit host 192.168.1.1
+Router(config-std-nacl)# deny any
+
+
+Router(config)# line vty 0 15
+Router(config-line)# access-class REMOTE-SSH in
+
+14. To Verify Access Control List
+=================================
+Router# show access-list
+
+
+
+
+
