@@ -1,0 +1,1 @@
+IPPR = Image Processing and Pattern Recognition
