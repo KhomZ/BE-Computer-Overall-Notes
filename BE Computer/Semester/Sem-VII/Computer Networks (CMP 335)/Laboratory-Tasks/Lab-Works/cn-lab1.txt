@@ -1,0 +1,166 @@
+PS C:\Users\ACER\Desktop> ping 127.0.0.1
+
+Pinging 127.0.0.1 with 32 bytes of data:
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+
+Ping statistics for 127.0.0.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+PS C:\Users\ACER\Desktop> ping ::1
+
+Pinging ::1 with 32 bytes of data:
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+Reply from ::1: time<1ms
+
+Ping statistics for ::1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+PS C:\Users\ACER\Desktop> ping 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Request timed out.
+Reply from 8.8.8.8: bytes=32 time=347ms TTL=115
+Request timed out.
+Reply from 8.8.8.8: bytes=32 time=136ms TTL=115
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 2, Lost = 2 (50% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 136ms, Maximum = 347ms, Average = 241ms
+PS C:\Users\ACER\Desktop> ping 8.8.8.8 -t
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=307ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=174ms TTL=115
+Request timed out.
+Reply from 8.8.8.8: bytes=32 time=1288ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=753ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=852ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=605ms TTL=115
+Request timed out.
+Reply from 8.8.8.8: bytes=32 time=198ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=68ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=215ms TTL=115
+Request timed out.
+Reply from 8.8.8.8: bytes=32 time=48ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=43ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=172ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=126ms TTL=115
+Reply from 8.8.8.8: bytes=32 time=124ms TTL=115
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 17, Received = 14, Lost = 3 (17% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 43ms, Maximum = 1288ms, Average = 355ms
+Control-C
+PS C:\Users\ACER\Desktop> ping 8.8.8.8 -L 1000 -t
+Bad option -L.
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+PS C:\Users\ACER\Desktop> ping ncit.edu.np
+
+Pinging ncit.edu.np [2606:4700:3033::ac43:b615] with 32 bytes of data:
+Reply from 2606:4700:3033::ac43:b615: time=8ms
+Reply from 2606:4700:3033::ac43:b615: time=20ms
+Reply from 2606:4700:3033::ac43:b615: time=38ms
+Reply from 2606:4700:3033::ac43:b615: time=5ms
+
+Ping statistics for 2606:4700:3033::ac43:b615:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 5ms, Maximum = 38ms, Average = 17ms
+PS C:\Users\ACER\Desktop> nslookup 173.14.5.2
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  2400:1a00:0:32::165
+
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+PS C:\Users\ACER\Desktop> nslookup ncit.edu.np
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  2400:1a00:0:32::165
+
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+PS C:\Users\ACER\Desktop> nslookup 173.14.5.2
+DNS request timed out.
+    timeout was 2 seconds.
+Server:  UnKnown
+Address:  2400:1a00:0:32::165
+
+DNS request timed out.
+    timeout was 2 seconds.
+*** Request to UnKnown timed-out
+PS C:\Users\ACER\Desktop> WHOIS
+WHOIS : The term 'WHOIS' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ WHOIS
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (WHOIS:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\ACER\Desktop> tracert ncit.edu.np
+
+Tracing route to ncit.edu.np [2606:4700:3033::ac43:b615]
+over a maximum of 30 hops:
+
+  1    18 ms     2 ms     1 ms  2400-1A00-B010.ip6.wlink.com.np [2400:1a00:b010:cdb1::1]
+  2    17 ms    31 ms    24 ms  2400:1a00:b1a1:0:c84d:d2e0:100:0
+  3     *        *        *     Request timed out.
+  4    79 ms    19 ms    19 ms  2400:1a00:0:1::233
+  5     4 ms    14 ms    14 ms  2400:1a00:4:1151::6
+  6    31 ms    14 ms    33 ms  2606:4700:3033::ac43:b615
+
+Trace complete.
+PS C:\Users\ACER\Desktop>
+
