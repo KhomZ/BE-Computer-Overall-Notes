@@ -32,7 +32,7 @@
 # Move disk 2 from source A to destination B
 # Move disk 1 from source C to destination B
 
-
+# this is wrong
 
 
 # refer: https://www.geeksforgeeks.org/python-program-for-tower-of-hanoi/
@@ -58,3 +58,16 @@ disks = int(input('Enter the number of disks:'))
 # We are referring source as A, auxiliary as B, and target as C.
 
 tower_of_hanoi(disks, 'A', 'B', 'C')  # Calling the function
+
+
+# outputs
+#  for n = 4
+# Move disk 1 from rod A to rod B.
+# Move disk 4 from rod A to rod C.
+# Move disk 1 from rod B to rod C.
+# Move disk 2 from rod B to rod A.
+# Move disk 1 from rod C to rod A.
+# Move disk 3 from rod B to rod C.
+# Move disk 1 from rod A to rod B.
+# Move disk 2 from rod A to rod C.
+# Move disk 1 from rod B to rod C.
