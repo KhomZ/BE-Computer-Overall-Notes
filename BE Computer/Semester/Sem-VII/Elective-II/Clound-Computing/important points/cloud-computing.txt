@@ -1,0 +1,43 @@
+SSO
+LDAP
+
+
+Certificates
+SSL signature implement garesi matra 
+a kind of security
+
+
+Users
+
+
+Roles
+
+Permisssions
+
+
+
+Monitor
+CPU allocation
+monitoring graph separation
+
+
+Hardware monitoring
+IPMI capabilities- Intelligent Platform Management Interface
+-- is a standardized message-based hardware management inteface.
+
+DPM - Dynamic Power Management
+intellig
+
+
+Events 
+Tasks 
+
+
+Logs to troubleshoot the vmware
+
+
+
+you must disable SSH after work is completed
+
+
+hypervisor is capable of virtualizing Netowork as well as 
