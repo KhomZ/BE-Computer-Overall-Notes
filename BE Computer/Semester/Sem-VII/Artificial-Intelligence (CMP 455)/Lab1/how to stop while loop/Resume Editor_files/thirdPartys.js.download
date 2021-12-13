@@ -1,0 +1,273 @@
+(function() {
+    if (!window.location.hostname.includes("enhancv.com")) {
+        return;
+    }
+
+    // Hotjar Code - Start
+    (function(h, o, t, j, a, r) {
+        h.hj =
+            h.hj ||
+            function() {
+                (h.hj.q = h.hj.q || []).push(arguments);
+            };
+        h._hjSettings = { hjid: 582574, hjsv: 5 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, "//static.hotjar.com/c/hotjar-", ".js?sv=");
+    // Hotjar Code - End
+
+    // GA Code - Start
+    (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+            i[r] ||
+            function() {
+                (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+
+    window.ga("create", "UA-52969150-1", "auto");
+    window.ga("send", "pageview");
+    // GA Code - End
+
+    // Amplitude Code - Start
+    (function(e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-4.5.0-min.gz.js";
+        r.onload = function() {
+            if (e.amplitude.runQueuedFunctions) {
+                e.amplitude.runQueuedFunctions();
+            } else {
+                console.log("[Amplitude] Error: could not load SDK");
+            }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+        function s(e, t) {
+            e.prototype[t] = function() {
+                this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                return this;
+            };
+        }
+        var o = function() {
+            this._q = [];
+            return this;
+        };
+        var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"];
+        for (var u = 0; u < a.length; u++) {
+            s(o, a[u]);
+        }
+        n.Identify = o;
+        var c = function() {
+            this._q = [];
+            return this;
+        };
+        var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"];
+        for (var p = 0; p < l.length; p++) {
+            s(c, l[p]);
+        }
+        n.Revenue = c;
+        var d = [
+            "init",
+            "logEvent",
+            "logRevenue",
+            "setUserId",
+            "setUserProperties",
+            "setOptOut",
+            "setVersionName",
+            "setDomain",
+            "setDeviceId",
+            "setGlobalUserProperties",
+            "identify",
+            "clearUserProperties",
+            "setGroup",
+            "logRevenueV2",
+            "regenerateDeviceId",
+            "groupIdentify",
+            "logEventWithTimestamp",
+            "logEventWithGroups",
+            "setSessionId",
+            "resetSessionId",
+        ];
+        function v(e) {
+            function t(t) {
+                e[t] = function() {
+                    e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+                };
+            }
+            for (var n = 0; n < d.length; n++) {
+                t(d[n]);
+            }
+        }
+        v(n);
+        n.getInstance = function(e) {
+            e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+            if (!n._iq.hasOwnProperty(e)) {
+                n._iq[e] = { _q: [] };
+                v(n._iq[e]);
+            }
+            return n._iq[e];
+        };
+        e.amplitude = n;
+    })(window, document);
+
+    amplitude
+        .getInstance()
+        .init("72c8030d2ed750e112ebed3e5d7d0450", null, {
+            // optional configuration options
+            saveEvents: true,
+            includeUtm: true,
+            includeReferrer: true,
+            includeGclid: true,
+            batchEvents: false,
+            eventUploadThreshold: 1000,
+            cookieExpiration: 1095,
+            sessionTimeout: 10800000,
+            logAttributionCapturedEvent: true,
+        });
+
+    function setCookie(name, value) {
+        var expires = "";
+        var date = new Date();
+        date.setTime(date.getTime() + 30 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+
+        document.cookie = name + "=" + (value || "") + expires + "; domain=.enhancv.com; path=/";
+    }
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == " ") c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    var is_landing_page = false;
+    if (document.referrer.indexOf("enhancv") == -1) {
+        if (!getCookie("in_session")) {
+            is_landing_page = true;
+        }
+    }
+
+    setCookie("in_session", true);
+
+    if (!document.referrer && !window.location.search) {
+        var identify = new amplitude.Identify()
+            .setOnce("initial_referrer", "direct")
+            .setOnce("initial_referring_domain", "direct")
+            .setOnce("initial_utm_source", "direct")
+            .setOnce("initial_utm_medium", "direct")
+            .setOnce("initial_utm_campaign", "direct")
+            .setOnce("initial_utm_content", "direct")
+            .setOnce("initial_utm_term", "direct");
+
+        amplitude.getInstance().identify(identify);
+    } else if (
+        (document.referrer.indexOf("google") !== -1 ||
+            document.referrer.indexOf("bing") !== -1 ||
+            document.referrer.indexOf("yahoo") !== -1 ||
+            document.referrer.indexOf("duckduckgo") !== -1) &&
+        !window.location.search
+    ) {
+        var identify = new amplitude.Identify()
+            .setOnce("initial_utm_source", "organic")
+            .setOnce("initial_utm_medium", "organic")
+            .setOnce("initial_utm_campaign", "organic")
+            .setOnce("initial_utm_content", "organic")
+            .setOnce("initial_utm_term", "organic");
+
+        amplitude.getInstance().identify(identify);
+    }
+
+    var identify = new amplitude.Identify()
+            .setOnce("initial_landing_page", window.location.href);
+
+        amplitude.getInstance().identify(identify);
+
+    amplitude.getInstance().logEvent("pageview", {
+        page_path: window.location.pathname,
+        page_title: document.title,
+        page_url: window.location.href,
+        page_hostname: window.location.host,
+        is_landing_page: is_landing_page,
+    });
+
+    // Amplitude Code - End
+
+    // Data Attributes Amplitude - Start
+    setTimeout(function() {
+        var triggers = Array.from(document.querySelectorAll("[data-amplitude-event]"));
+
+        for (var z = 0; z < triggers.length; z++) {
+            (function(i) {
+                triggers[i].addEventListener("click", function(e) {
+                    var props = {};
+
+                    for (var j = 0; j < triggers[i].attributes.length; j++) {
+                        var attribute = triggers[i].attributes[j];
+
+                        if (attribute.nodeName.includes("data-amplitude-prop")) {
+                            props[attribute.nodeName.replace("data-amplitude-prop-", "")] =
+                                attribute.nodeValue;
+                        }
+                    }
+
+                    window.amplitude
+                        .getInstance()
+                        .logEvent(e.target.getAttribute("data-amplitude-event"), props);
+                });
+            })(z);
+        }
+    }, 1);
+    // Data Attributes Amplitude - End
+
+    // FB Code - Start
+    !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "958381097600006");
+    fbq("track", "PageView");
+    fbq("set", "autoConfig", false, "958381097600006");
+    // FB Code End
+
+    // Data Attributes Facebook - Start
+    setTimeout(function() {
+        var triggers = Array.from(document.querySelectorAll("[data-fb-event]"));
+
+        for (var z = 0; z < triggers.length; z++) {
+            (function(i) {
+                triggers[i].addEventListener("click", function(e) {
+                    window.fbq("track", e.target.getAttribute("data-fb-event"))
+                });
+            })(z);
+        }
+    }, 1);
+    // Data Attributes Amplitude - End
+})();
