@@ -1,0 +1,10 @@
+Histogram Stretching
+
+Contrast stretching is all about increasing the difference between the maximum intensity value 
+in an image and the minimum one. 
+All the rest of the intensity values are spread out between this range.
+
+Explore Further:
+>> Difference between equalization and stretching
+>> Example of Histogram Stretching
+>> Python Implementation of the code
