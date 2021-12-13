@@ -1,0 +1,5 @@
+Histogram Equalization
+
+Histogram Equalization is a computer image processing technique used to improve contrasts in the image.
+
+It accomplishes this by effectively spreading out most frequent intensity values.
