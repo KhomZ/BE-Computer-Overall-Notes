@@ -34,8 +34,9 @@ plt.plot(histg)
 plt.show()
 
 # ============================== Main code============================== 
- x = histg.reshape(1, 256)
- y = np.zeros((1, 256))
+
+x = histg.reshape(1,256)
+y = np.zeros((1,256))
 
 for i in range(256):
     if x[0,i] == 0:
