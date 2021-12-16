@@ -1,4 +1,5 @@
 // Calculate histogram
+
 int ptr = 0;
 while (ptr < srcData.length) {
     int h = 0xFF & srcData[ptr];
@@ -10,7 +11,9 @@ while (ptr < srcData.length) {
 int total = srcData.length;
 
 float sum = 0;
-for (int t=0; t<255; t++) sum += t * histData[t];
+for (int t=0; t<255; t++){
+    sum += t * histData[t];
+} 
 
 
 float sumB = 0;
