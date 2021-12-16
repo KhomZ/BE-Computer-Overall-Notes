@@ -1,0 +1,11 @@
+Digital Image Processing
+
+Otsu's Thresholding (Within-class variance)
+
+Otsu's Thresholding method incolces iterating through all the possible threshold values 
+and calculating a measure of spread for the pixel levels each side of the threshold,
+i.e. the pixels that either fall in foreground or background.
+
+named after Nobuyuki Otsu.
+used to perform automatic image thresholding.
+
