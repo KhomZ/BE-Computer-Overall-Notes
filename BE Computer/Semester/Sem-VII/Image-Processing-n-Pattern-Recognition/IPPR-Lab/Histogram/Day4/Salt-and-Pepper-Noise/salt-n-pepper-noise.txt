@@ -1,0 +1,23 @@
+Salt-and-pepper: It is found only in grayscale images (black and white image). 
+As the name suggests salt (white) in pepper (black)–white spots in the dark regions 
+or pepper (black) in salt (white)–black spots in the white regions. 
+
+In other words, an image having salt-and-pepper noise will have a few dark pixels in bright regions and 
+a few bright pixels in dark regions. 
+
+Salt-and-pepper noise is also called impulse noise. 
+It can be caused by several reasons like dead pixels, analog-to-digital conversion error, bit transmission error, etc.
+
+Let's see how to add salt-and-pepper noise in an image
+> Salt and pepper noise can only be added in a grayscale image.
+    So, convert an image to grayscale after reading it 
+> Randomly pick the number of pixels to which noise is added (no_of_pixels) 
+> Randomly pick some pixels in the image to which noise will be added.
+    It can be done randomly picking x and y coordinate
+> Note the random values generated must be within the range of the image dimensions.
+    The x and y coordinates must be within the range of the image size.
+> Random numbers can be generated using random number generator functions like random.randint used in the code
+> Color some randomly picked pixels as black setting their value to 0
+> Color some randomly picked pixels as white setting their value to 255
+> Save the value of the image
+

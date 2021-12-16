@@ -1,0 +1,26 @@
+Convolution is a mathematical method of combining two signals to form a third signal.
+The characteristics of a linear system is completely specified by the impulse response of the system
+and the mathematics of Convolution.
+It is well-known that the output of a linear time (or space) invariant system can be expressed
+as a Convolution between the input signal and the system impusle response function.
+
+
+Correlation
+Correlation is a simple mathematical operation to compare two signals.
+Correlation is also a Convolution operation between two signals.
+Buth there is a basic difference. 
+Correlation of two signals is the Convolution between with the functional inverse version of the other signal.
+
+The resultant signal is called the cross-correlation of the two input signals.
+The amplitude of cross-correlation signal is a measure of how much the received signal resembles the target signal.
+The correlation peak specifies the location of the target.
+
+
+
+Zero padding
+imageSize + kernelSize - 1
+
+
+Mean Filter
+
+Median Filter => best application of this is to remove pepper salt noise
