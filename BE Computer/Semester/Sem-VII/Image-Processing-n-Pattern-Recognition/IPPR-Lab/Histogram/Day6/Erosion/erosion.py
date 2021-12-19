@@ -12,10 +12,21 @@ import numpy as np
 from cv2 import cv2, resize
 
 original = cv2.imread(r"C:\Users\ACER\Desktop\myProj\what-I-learnt-as-a-Computer-Engineering-Student\BE Computer\Semester\Sem-VII\Image-Processing-n-Pattern-Recognition\IPPR-Lab\Histogram\Day1\pictures\ai-buddha.jpg")
-original = cv2.resize(original, (800,600))
+cv2.imshow('original',original)
+# res = cv2.resize(original, (800,600))
+res = cv2.resize(original,None,fx=2, fy=2, interpolation = cv2.INTER_CUBIC)
+
+kernel = np.ones((5,5), np.uint8)
+# erosion = cv2.erode(original, kernel, iterations = 30)
+erosion = cv2.erode(res, kernel, iterations = 30)
+cv2.imshow('erode',erosion)
 
 
+# cv2.imwrite('sample_erode.jpg', erosion)
+file_name_path = r"C:\Users\ACER\Desktop\myProj\what-I-learnt-as-a-Computer-Engineering-Student\BE Computer\Semester\Sem-VII\Image-Processing-n-Pattern-Recognition\IPPR-Lab\Histogram\Day6\Erosion\sample_erode.jpg"
+cv2.imwrite(file_name_path, erosion)
 
+cv2.waitKey(0)
 
 
 
