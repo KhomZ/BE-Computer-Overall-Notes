@@ -1,0 +1,3 @@
+Erosion: 
+Erosion involves the removal of pixels ate the edges of the region.
+Erosion is just the dual of Dilation.

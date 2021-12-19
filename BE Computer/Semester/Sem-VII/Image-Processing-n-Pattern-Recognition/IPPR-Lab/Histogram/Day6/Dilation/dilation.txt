@@ -1,0 +1,3 @@
+Dilation: 
+Dilation is the reverse process with regions growing out from their boundaries.
+Dilation is A XOR B.

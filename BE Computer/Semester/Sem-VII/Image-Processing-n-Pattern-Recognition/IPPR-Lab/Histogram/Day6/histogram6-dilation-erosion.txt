@@ -1,0 +1,21 @@
+Binary Morphological Basic Operations:
+Erosion & Dilation are explained in-depth using wonderful Animation,
+as well as explain Manual Implementation in Python.
+
+This section mainly focuses on how to Erode/Dilate Binary Image for better object detection,
+for better extraction or merging between two or more objects.
+
+
+
+Morphological image processing is a collection of non-linear operations related to the shape or morphology of features in an image.
+
+
+Dilation:
+Dilation is the reverse process with regions growing out from their boundaries.
+Dilation is A XOR B.
+
+Erosion:
+Erosion involves the removal of pixels at the edges of the region.
+Erosion is just the dual of Dilation.
+
+Both dilation and erosion are produced by the extraction of s set called a structuring element(SE)
