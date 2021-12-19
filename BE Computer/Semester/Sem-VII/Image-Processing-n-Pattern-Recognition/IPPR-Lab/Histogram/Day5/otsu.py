@@ -21,21 +21,31 @@ print(histg)
 
 # now finding within-class variance
 within = []
+between = []
 for i in range(len(histg)):
+    d = 0
     x,y = np.split(histg, [i])
     x1 = np.sum(x)/(rose.shape[0] * rose.shape[1])  # weight of class 1
     y1 = np.sum(y)/(rose.shape[0] * rose.shape[1])
+
     x2 = np.sum([j*t for j,t in enumerate(x)])/np.sum(x)  # t-pixels & j-indexing values. here, x2 & y2 are mean values
-    y2 = np.sum([j*t for j,t in enumerate(y)])/np.sum(y)
+    x2 = np.nan_to_num(x2)
+    y2 = np.sum([(j+d)*(t) for j,t in enumerate(y)])/np.sum(y)
+
     x3 = np.sum([(j-x2)**2*t for j,t in enumerate(x)])/np.sum(x)  # find variance
     # print(x3)  # prints nan value also so we need to change nan values to zeros as
     x3 = np.nan_to_num(x3)
     # print(x3)
-    y3 = np.sum([(j-y2)**2*t for j,t in enumerate(y)])/np.sum(y)
+    y3 = np.sum([(j+d-y2)**2*t for j,t in enumerate(y)])/np.sum(y)
+    d = d+1
     within.append(x1*x3 + y1*y3)
+    between.append(x1*y1*(x2-y2)*(x2-y2))
 
 m = np.argmin(within)
+n = np.argmax(between)
 print(m)
+print(n)
+
 (thresh, Bin) = cv2.threshold(rose_gray, m, 255, cv2.THRESH_BINARY)
 cv2.imshow('Otsu', Bin)
 cv2.waitKey(0)
