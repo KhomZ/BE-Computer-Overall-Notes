@@ -5,3 +5,24 @@ This repo is mainly focused on what I've learnt while pursuing my undergraduate 
 
 # BE Computer
 <!-- Bachelor's in Computer Engineering -->
+Course Structure
+
+| Year I, Semester I                                                   |
+|`Course Code`    |`Subject`                               |`Credits`  |
+| --------------- |:--------------------------------------:| ---------:|
+| MTH 112         | Engineering Mathematics I              |      3    |
+| CHM 111         | Chemistry                              |      4    |
+| ENG 111         | Communication Techniques               |      2    |
+| CMP 113         | Programming in C                       |      3    |
+
+
+
+| col 2 is      | Image Processing and Pattern Recognition |      3    |
+| zebra stripes | are neat      |    $1 |
+
+
+
+Course Code | Subject | Credits
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
