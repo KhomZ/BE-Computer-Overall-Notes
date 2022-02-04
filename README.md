@@ -7,7 +7,7 @@ This repo is mainly focused on what I've learnt while pursuing my undergraduate 
 <!-- Bachelor's in Computer Engineering -->
 Course Structure
 
-| Computer Engineering    |Year I                          |![Semester I](BE Computer\Semester\Sem-I)          |
+| Computer Engineering    |Year I                          |[Semester I](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-I)          |
 |`Course Code`    |`Subject`                               |`Credits`  |
 | --------------- |:--------------------------------------:| ---------:|
 | MTH 112         | Engineering Mathematics I              |      3    |
