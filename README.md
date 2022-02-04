@@ -7,7 +7,7 @@ This repo is mainly focused on what I've learnt while pursuing my undergraduate 
 <!-- Bachelor's in Computer Engineering -->
 Course Structure
 
-## [Year I, Semester I](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-I)          |
+## [Year I, Semester I Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-I)
 |`Course Code`    |`Course Description`                    |`Credits Hours`  |
 | --------------- |:--------------------------------------:| ---------------:|
 | MTH 112         | Engineering Mathematics I              |      3          |
@@ -18,7 +18,7 @@ Course Structure
 | MEC 110         | Mechanical Workshop                    |      1          |
 
 
-## [Year I, Semester II](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-II)
+## [Year I, Semester II Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-II)
 |`Course Code`	|`Course Description`|`Credit Hours`|
 | --------------- |:--------------------------------------:| ---------------:|
 |MTH 114	    |Engineering Mathematics II         |	3|
@@ -29,7 +29,7 @@ Course Structure
 |MEC 130	    |Applied Mechanics I                |	3|
 
 
-## [Year II, Semester III](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-III)
+## [Year II, Semester III Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-III)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 |MTH 212	|Engineering Mathematics III	    |3
@@ -40,7 +40,7 @@ Course Structure
 |ELX 212	|Logic Circuits	                    |3
 
 
-## [Year II, Semester IV](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-IV)
+## [Year II, Semester IV Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-IV)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 MTH 214	|Engineering Mathematics IV	        |3
@@ -51,7 +51,7 @@ ELX 230	|Microprocessors	                |3
 CMP 290	|Project I      	                |1
 
 
-## [Year III, Semester V](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-V)
+## [Year III, Semester V Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-V)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 MTH 230	|Numerical Methods	                    |3
@@ -62,7 +62,7 @@ CMP 241	|Computer Graphics  	                |3
 CMP 326	|Theory of Computation               	|3
 
 
-## [Year III, Semester VI](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VI)
+## [Year III, Semester VI Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VI)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 CMP 350	|Simulation and Modeling	            |3
@@ -73,7 +73,7 @@ ELX 312	|Embedded Systems       	            |3
 CMP 390	|Project II             	            |2
 
 
-## [Year IV, Semester VII](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VII)
+## [Year IV, Semester VII Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VII)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 ECO 411	|Engineering Economics	                    |3
@@ -84,7 +84,7 @@ CMP 483	|ICT Project Management 	                |3
 (your ele)|Elective II	                            |3
 
 
-## [Year IV, Semester VIII](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VIII)
+## [Year IV, Semester VIII Notes](https://github.com/KhomZ/what-I-learnt-as-a-Computer-Engineering-Student/tree/main/BE%20Computer/Semester/Sem-VIII)
 |`Course Code`	|`Course Description`	|`Credit Hours`
 | --------------- |:--------------------------------------:| ---------------:|
 CMP 442	|Digital Signal Processing	                |3
