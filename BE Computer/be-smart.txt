@@ -1,0 +1,430 @@
+Artificial Intelligence
+the theory and development of CS able to perform tasks
+
+
+Applications of AI
+1. Self driving cars
+2. finance
+-app called "DiGiT"
+3. Games
+4. Language translation
+5. Publishing
+-Echobox:
+6. hospitals /medicine
+7. email spam filtering 
+facial recognition
+
+
+how to get into ai
+undergrad: won't see AI as a major
+best major: CS
+
+other majors
+-math
+
+
+Deepmind 
+AI company owned by google
+careers page
+1. Research scientist
+2. RFesearch scinetist
+3. research engineer
+
+
+other companies
+computer science and eqv
+computer science, electrical engg, robotics
+
+robotics 
+moving parts/hardware
+
+
+
+AI 
+
+mL
+NLP
+vision
+speech
+robotics
+
+
+
+Machine Learning
+s/w that can learn from past experiences (DATA)
+
+computer get better over time>???
+NO
+
+
+Not machine learning 
+
+
+If it used mL
+
+
+
+
+
+it's easy for human to distinguish a cat and a dog
+but a computer needs training
+
+
+
+without mL
+facial features....
+
+
+
+
+program 
+
+bunch of pictures of dog
+
+
+output dog
+
+
+
+
+at first program  is terrible 
+
+
+learn how  to recognize one
+
+
+Example
+
+
+program that predicts your test score from
+
+hours 
+
+sleep
+
+
+
+
+
+input : hours sleep
+output : test score
+
+hidden layer
+
+
+neuron 
+neural network
+
+
+only weihted sums
+wrong
+
+
+activation function
+
+
+1/(1+ e^-x)
+
+
+where did the weights come from?
+are they accurate>???
+
+
+at the first weights are random (and wrong)
+
+trainee
+
+
+thousands of data
+
+
+supervised learning 
+
+unsupervised learninig
+
+reinforcement 
+
+
+
+
+facial recognition
+
+
+
+
+
+
+Part2 
+
+
+this is part 2 of AI
+
+Machine learning 
+
+super mario
+
+make it to the end 
+
+to begin computer was terrible
+
+got to super human level
+
+
+
+
+Chess
+starting board
+
+pawn a3    pawn a4 ............ nc3 (20 moves)\
+
+
+					400 possible games
+					over 100 million
+
+
+
+
+Deep Blue 
+chess playing computer developed by IBM
+beat one of the greatest players 
+
+
+
+
+alphaGo
+that plays the game GO
+dev by deepmind (owned by google)
+
+
+more possibilities than chess
+
+
+programmed to learn
+
+
+beat 18 time world champion
+
+no strategies / evaluation function
+
+
+used neural networks
+
+
+
+Deep Blue
+Chess 
+programmed evaluation function
+
+AlphGo
+no strategy 
+lerant
+ran millions of games
+if it had an evaluation
+function
+-beat an avg player
+
+
+
+Research / companies
+Google Brain
+-deep learning AI project
+-create own encryption
+
+
+hello alice!->encrypt->aslkjdhfjg;aolsjd;
+
+
+
+create o
+
+
+watson
+made by ibm
+question answering cs
+posed in natural language
+
+when 
+
+siri
+
+
+Facebook
+textual analysin
+analyze relationship betwn words and their meanings
+
+deep text
+
+
+
+NAUTO
+help prevent car accidents
+product is a camera
+
+
+
+VERSIVE
+money related
+
+
+AFFECTIVA
+emotion recognition products
+testion a new advertisement
+
+
+SIFT science
+detect fraud
+
+
+zebra-med
+radiology
+predict diseases better than human
+
+
+blue river technology
+CV and AI
+
+spray herbicide to unwanted weeds
+
+
+
+over 100 ai startups
+
+
+fear around AI
+may be better than human
+exponential curve head
+
+
+
+what's your opinion
+
+do comment in the comment section below
+
+
+
+
+
+--------------------------------------------------------------------
+
+you can learn almost anything that anyone else can
+can everyone do well????????
+(learning, sports,......
+
+we don't know??????
+
+
+is it possible to walk into the worst high school, and teach them college level calculus???
+
+stand and deliver
+movie
+-true story
+-teaching at a school in east L>A. (worst ins the state)
+-far behind academically
+-serious social issues
+
+they aren't capable of 
+
+
+
+aren't borm equals
+
+
+constant curiosity/learning
+
+we all have interests we can turn into abilities 
+
+
+ten thousand hour rule
+it takes ten thousands and hours of deliberate
+
+
+
+
+deliberate practice (serious study)
+
+
+improvement 
+
+
+6 years later 
+significantly better 
+
+practiced little more
+
+
+
+
+
+
+
+
+
+if you just worked hard, you'll get better, but you will hit a performance plateau
+
+
+deliberate practice is typically not enjoyable
+-why most people don't
+
+
+
+expert
+
+
+failed to find evidence that says natural ability explains experts' success
+
+
+mastering something 
+
+
+Benjamin Bloom(educational psychology, mastery learning)
+
+"What any person in the world can learn, almost all
+persons can learn if provided with the appropriate 
+prior and current conditions of learning"
+
+
+how you put into the work
+challenging yourself
+
+
+engineers 
+scientists
+doctors
+musicians
+etc
+
+
+
+struggling with class
+final exam was one year from now
+
+"Well okay yeah i'd study like crazy, but i woud have an
+entire year to study(and a really strong incentive)"
+
+have the ability to learn the topic
+
+early in the term
+
+
+better strategies
+practiced harder
+pushed through obstacles
+
+
+
+
+
+
+study less study smart 
+If you spend hours and hours of studying, without improving your grades,
+or information retention, then learn how to study smart by Marty Lobdell.
+Lobdell taught Psychology at Pierce College in Washington State for 40 years.
+During Lobdells' career, he has taught cram for eight hours or more for a test
+without any improvement, Lobdell has developed a studying technique that 
+helps the brain retain the information that you are studying in this video 
+
+"Study Less, Study Smart"
+
+https://www.youtube.com/watch?v=IlU-zDU6aQ0
+
+
